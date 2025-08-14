@@ -14,35 +14,36 @@
     </header>
 
     <!-- Navigation Timeline Buttons -->
-    <nav class="timeline-nav">
-        <button class="timeline-btn" data-event="1977">1977</button>
-        <button class="timeline-btn" data-event="1990">1990</button>
-        <button class="timeline-btn" data-event="2000">2000</button>
-        
+    <nav id="timeline-nav">
+        <button class="timeline-btn" data-year="1977">1977</button>
+        <button class="timeline-btn" data-year="1990">1990</button>
+        <button class="timeline-btn" data-year="2000">2000</button>
+        <button class="timeline-btn" data-year="2007">2007</button>
+        <button class="timeline-btn" data-year="2010">2010</button>
+        <button class="timeline-btn" data-year="2015">2015</button>
+        <button class="timeline-btn" data-year="2020">2020</button>
+        <button class="timeline-btn" data-year="2023">2023</button>
     </nav>
+
+    
 
     <main>
         <!--Event Timers-->
-        <section id="timeline">
-            <article>
-                <div class="article-header">
-                    <h3>1977</h3>
-                    <h3>Introduction of the First Personal Computer</h3> 
-                </div>
-                <figure>
-                    <img src="appleii.webp" alt="computer image">
-                    <figcaption>Early Computer Image</figcaption>
-                </figure>
-                <div id="description">
-                    <p>The rise of the personal computer, introduced in 1977, revolutionized the way people interacted with technology.</p>
-                </div>
-                <a href="#"><button>Learn More</button></a>
-            </article>
-        </section>
     </main>
+    <div id="popup-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-btn">&times;</span>
+      <h2 id="modal-title"></h2>
+      <img id="modal-img" src="" alt="" />
+      <p id="modal-desc"></p>
+    </div>
+    
+</div>
+
 
     <div id="modal">
         <!--modal pop_ups will go here-->
     </div>
+     <script src="script.js"></script>
 </body>
 </html>
