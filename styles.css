@@ -118,42 +118,18 @@ article a button:hover {
 
 
 
-/* Modal (hidden by default) */
-#modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-#modal.active {
-  display: flex;
-}
-
-#modal-content {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  max-width: 500px;
-  width: 90%;
-}
 
 /* Navigation Placeholder */
+/* Timeline navigation layout */
 nav {
   padding: 1rem 2rem;
   background-color: #f5f5f5;
   text-align: center;
   font-style: italic;
   color: #777;
+  margin-top:0px;
 }
-
-nav.timeline-nav {
+#timeline-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -161,45 +137,90 @@ nav.timeline-nav {
   position: relative;
   margin-bottom: 2rem;
 }
+
+
 /* For creating Pseudo Element(i.e to create horizontal line)*/
-nav.timeline-nav::before {
+#timeline-nav::before {
   content: '';
   position: absolute;
   top: 50%;
-  left: 2rem;
-  right: 2rem;
+  left: 0;
+  width: 100%;
   height: 4px;
   background-color: #333;
-  z-index: 1;
+  background-color: #ccc;
+  z-index: 1; /* This shows that the horizontal line will be behind buttons */
 }
-/* Nav buttons */
-.timeline-btn {
-  position: relative;
-  z-index: 2;
+
+/* Style for each timeline button */
+#timeline-nav .timeline-btn {
   background-color: white;
-  border: 3px solid #333;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  color: black;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Perfect circle */
+  z-index: 2;
+  position: relative;
   cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
-  font-size: 0.75rem;
-  color: #333;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 14px;
 }
 
-.timeline-btn:hover {
+
+/* Adding hover effect */
+#timeline-nav .timeline-btn:hover {
   background-color: #ff9800;
-  color: white;
-  transform: scale(1.1);
 }
 
-.timeline-btn.active {
-  background-color: #ff9800;
-  color: white;
+
+
+
+/* making pop_up visible now*/
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
 }
+
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 200px; /* adjust this value as needed */
+  margin-top: 10px;
+  border-radius: 10px;
+  object-fit: cover; /* crops excess while preserving aspect ratio */
+}
+
+#close-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
 
 
 
@@ -226,6 +247,16 @@ nav.timeline-nav::before {
   #timeline {
     padding: 0 2rem;
   }
+  .modal-content {
+    width: 80%;
+    max-height: 70vh;
+  }
+  .modal-content img {
+    max-height: 180px;
+  }
+  
+  
+
 }
 
 /* For Mobile View */
@@ -247,4 +278,21 @@ nav.timeline-nav::before {
   article::before {
     left: -8px;
   }
+  .modal-content {
+    width: 90%;
+    max-height: 70vh;
+    padding: 1rem;
+  }
+  .modal-content img {
+    max-height: 150px;
+    width: 100%;
+    object-fit: cover;
+  }
+  #close-btn {
+    top: 5px;
+    right: 10px;
+    font-size: 24px;
+  }
+  
+
 }
