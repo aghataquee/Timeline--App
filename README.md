@@ -72,6 +72,60 @@ An interactive timeline web application that visually presents major technology 
    cd timeline-app
 2.open index.html
 # or simply double-click on index.html
+# For Typescript Part
+Task 4 Adding Typescript and updated css 
+CSS updations for modal and removed parts of article which i had created before for html part.
+Below is the short description for typescript i have done in this project.
+Features:
+# Timeline buttons from 1977–2023
+
+# Image, title, description shown in a modal
+
+# Light/Dark theme toggle
+
+# Responsive design (mobile/tablet/desktop)
+
+# Modular code using TypeScript modules like ts config.js
+# Converted ts files into js files to run in browser 
+# updated styles.css removed unnecessary part like article section 
+timeline-app/
+│
+├── data/
+│   └── events.json           # Timeline events data
+│
+├── images/
+│   └── *.jpg/png                 # Event images and logo
+│
+├── src/
+│   ├── index.ts              # Main logic (DOM and event handling)
+│   ├── fetcher.ts            # Data fetch logic
+│   ├── modal.ts              # Modal rendering logic
+│   ├── theme.ts              # Theme toggle logic
+│   └── types.ts              # Type definitions
+│
+├── dist/
+│   ├── index.js              # Transpiled JavaScript files (after `tsc`)
+│   ├── fetcher.js
+│   ├── modal.js
+│   ├── theme.js
+│   └── types.js
+│
+├── index.html                # Main HTML file
+├── styles.css                # Styling for layout and modal
+├── tsconfig.json             # TypeScript configuration
+└── README.md 
+# Project guide For clone or download
+ git clone https://github.com/aghataquee/timeline-app.git
+ cd timeline-app
+ # for ts configuration commands are:
+ npm init -y
+ npm install -g typescript // for typescript installation
+ npx tsc // for ts files conversion into js files
+
+ 
+
+
+
 
 
 
