@@ -76,18 +76,15 @@ An interactive timeline web application that visually presents major technology 
 Task 4 Adding Typescript and updated css 
 CSS updations for modal and removed parts of article which i had created before for html part.
 Below is the short description for typescript i have done in this project.
-Features:
-# Timeline buttons from 1977–2023
-
-# Image, title, description shown in a modal
-
-# Light/Dark theme toggle
-
-# Responsive design (mobile/tablet/desktop)
-
-# Modular code using TypeScript modules like ts config.js
-# Converted ts files into js files to run in browser 
-# updated styles.css removed unnecessary part like article section 
+# Features:
+Timeline buttons from 1977–2023
+Image, title, description shown in a modal
+Light/Dark theme toggle
+Responsive design (mobile/tablet/desktop)
+Modular code using TypeScript modules like ts config.js
+Converted ts files into js files to run in browser 
+updated styles.css removed unnecessary part like article section 
+# Project Structure
 timeline-app/
 │
 ├── data/
