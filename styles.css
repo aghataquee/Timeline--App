@@ -1,4 +1,4 @@
-/* Base styles For general styling*/
+/*for general styling*/
 * {
   margin: 0;
   padding: 0;
@@ -39,96 +39,16 @@ header img {
   background-color: #fb8c00;
 }
 
-/* Main Timeline Layout */
-main {
-  padding: 1rem 0;
-  
-}
-#timeline {
-  display: flex;
-  justify-content: center;   
-  align-items: center;       
-  text-align: center;        
-  min-height: 100vh;         
-  padding: 2rem;             
-}
-
-
-
-
-
-/* Timeline Article */
-article {
-  border-left: 4px solid #1e1e2f;
-  padding: 3rem 1rem 1rem 2rem;
-  position: relative;
-  background: #fff;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  border-radius: 8px;
-  width: 100%;
-}
-
-.article-header {
-  color: #ff5722;
-  font-size: 1.3rem;
-  margin-top: 0.25rem;
-  font-weight: 600;
-}
-
-
-
-figure {
-  margin-top: 1rem;
-}
-
-figure img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-figcaption {
-  text-align: center;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-#description {
-  margin-top: 1rem;
-}
-
-#description p {
-  line-height: 1.5;
-}
-
-article a button {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #1e1e2f;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-article a button:hover {
-  background-color: #33334d;
-}
-
-
-
-
-/* Navigation Placeholder */
-/* Timeline navigation layout */
+/* Navigation */
 nav {
   padding: 1rem 2rem;
   background-color: #f5f5f5;
   text-align: center;
   font-style: italic;
   color: #777;
-  margin-top:0px;
+  margin-top: 0;
 }
+
 #timeline-nav {
   display: flex;
   justify-content: space-between;
@@ -138,8 +58,6 @@ nav {
   margin-bottom: 2rem;
 }
 
-
-/* For creating Pseudo Element(i.e to create horizontal line)*/
 #timeline-nav::before {
   content: '';
   position: absolute;
@@ -147,19 +65,17 @@ nav {
   left: 0;
   width: 100%;
   height: 4px;
-  background-color: #333;
   background-color: #ccc;
-  z-index: 1; /* This shows that the horizontal line will be behind buttons */
+  z-index: 1;
 }
 
-/* Style for each timeline button */
 #timeline-nav .timeline-btn {
   background-color: white;
   color: black;
   border: none;
   width: 60px;
   height: 60px;
-  border-radius: 50%; /* Perfect circle */
+  border-radius: 50%;
   z-index: 2;
   position: relative;
   cursor: pointer;
@@ -170,28 +86,24 @@ nav {
   font-size: 14px;
 }
 
-
-/* Adding hover effect */
 #timeline-nav .timeline-btn:hover {
   background-color: #ff9800;
 }
 
-
-
-
-/* making pop_up visible now*/
+/* Modal */
 .modal {
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   z-index: 999;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 1rem;
 }
-
 
 .modal-content {
   background-color: #fff;
@@ -207,24 +119,21 @@ nav {
 
 .modal-content img {
   max-width: 100%;
-  max-height: 200px; /* adjust this value as needed */
+  max-height: 200px;
   margin-top: 10px;
   border-radius: 10px;
-  object-fit: cover; /* crops excess while preserving aspect ratio */
+  object-fit: cover;
 }
 
 #close-btn {
   position: absolute;
-  top: 10px; right: 15px;
+  top: 10px;
+  right: 15px;
   font-size: 28px;
   cursor: pointer;
 }
 
-
-
-
-
-/* For Desktop view */
+/* For Desktop viewD */
 @media (min-width: 1024px) {
   #timeline {
     padding: 0 4rem;
@@ -242,57 +151,50 @@ nav {
     padding: 1rem 4rem;
   }
 }
+
 /* For Tablet view */
 @media (min-width: 768px) {
   #timeline {
     padding: 0 2rem;
   }
+
   .modal-content {
     width: 80%;
     max-height: 70vh;
   }
+
   .modal-content img {
     max-height: 180px;
   }
-  
-  
-
 }
 
-/* For Mobile View */
+/* For Mobile view */
 @media (max-width: 480px) {
   header {
     padding: 1rem;
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   #theme-toggle {
     width: 100%;
   }
-  
-  article {
-    padding: 1rem;
-  }
-  
-  article::before {
-    left: -8px;
-  }
+
   .modal-content {
     width: 90%;
     max-height: 70vh;
     padding: 1rem;
   }
+
   .modal-content img {
     max-height: 150px;
     width: 100%;
     object-fit: cover;
   }
+
   #close-btn {
     top: 5px;
     right: 10px;
     font-size: 24px;
   }
-  
-
 }
