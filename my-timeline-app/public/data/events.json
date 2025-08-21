@@ -1,0 +1,58 @@
+[
+  {
+    "year": "1977",
+    "title": "Introduction of the First Personal Computer",
+    "description": "The rise of the personal computer, introduced in 1977, revolutionized the way people interacted with technology.",
+    "imageURL": "images/appleii.webp"
+    
+  },
+  {
+    "year": "1990",
+    "title": "Launch of the World Wide Web",
+    "description": "Tim Berners-Lee introduced the World Wide Web, changing the way people accessed and shared information.",
+    "imageURL": "images/WWW_logo_by_Robert_Cailliau.svg.png"
+
+  },
+  {
+    "year": "2000",
+    "title": "Dot-Com Boom",
+    "description": "The dot-com bubble peaked in 2000 with huge growth in internet-based companies.",
+    "imageURL": "images/Nasdaq_Composite_dot-com_bubble.svg.png",
+    "category": "Economy"
+  },
+  {
+    "year": "2007",
+    "title": "First iPhone Released",
+    "description": "Apple launched the first iPhone, marking a new era in mobile technology.",
+    "imageURL": "images/IPhone_1st_Gen.svg.png"
+    
+  },
+  {
+    "year": "2010",
+    "title": "Instagram Launched",
+    "description": "Instagram, the photo-sharing app, was launched and quickly gained popularity.",
+    "imageURL": "images/Instagram_logo_2022.svg.webp"
+    
+  },
+  {
+    "year": "2015",
+    "title": "Rise of AI",
+    "description": "AI technologies like deep learning began transforming industries from healthcare to finance.",
+    "imageURL": "images/AI.jpeg"
+    
+  },
+  {
+    "year": "2020",
+    "title": "COVID-19 Pandemic",
+    "description": "The global pandemic changed how the world worked, traveled, and communicated.",
+    "imageURL": "images/covid_image.jpeg"
+    
+  },
+  {
+    "year": "2023",
+    "title": "Advances in Generative AI",
+    "description": "Tools like ChatGPT and Midjourney highlighted the mainstream adoption of generative AI.",
+    "imageURL": "images/genAI.webp"
+    
+  }
+]
