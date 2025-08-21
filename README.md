@@ -62,6 +62,7 @@ my-timeline-app/
    git clone https://github.com/your-username/my-timeline-app.git
    cd my-timeline-app
 # Dependency Installation
+npm create vite@latest my-timeline-app -- --template react-ts
 npm install
 npm run dev
 Run on your server on localhost://5173
