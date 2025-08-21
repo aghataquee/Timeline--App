@@ -63,7 +63,8 @@ my-timeline-app/
    cd my-timeline-app
 # Dependency Installation
 npm install
-# Run on your server on localhost://5173
+npm run dev
+Run on your server on localhost://5173
 
 
 
