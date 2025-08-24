@@ -221,3 +221,21 @@ body.dark .modal-content {
 body.dark header {
   background-color: #0f0f1a;
 }
+body {
+  background-color: #ffffff;
+  color: #222222; /* dark text on light background */
+}
+
+body.dark-theme {
+  background-color: #111111;
+  color: #f2f2f2;
+}
+
+button {
+  background: #005fcc;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
